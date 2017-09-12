@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>Javascript Website</title>
+
+    <meta name="description" content="Javascript Website">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="../assets/img/favicons/favicon.png">
+
+    <link rel="icon" type="image/png" href="../assets/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../assets/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../assets/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../assets/img/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="../assets/img/favicons/favicon-192x192.png" sizes="192x192">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon-180x180.png">
+    <!-- END Icons -->
+
+    <!-- Stylesheets -->
+    <!-- Web fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+    <!-- Page JS Plugins CSS go here -->
+
+    <!-- Bootstrap and CSS framework -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" id="css-main" href="../assets/css/oneui.min.css">
+    <!-- END Stylesheets -->
+</head>
+<body>
+<div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <!-- Sidebar Scroll Container -->
+        <div id="sidebar-scroll">
+            <!-- Sidebar Content -->
+            <div class="sidebar-content">
+                <!-- Side Header -->
+                <div class="side-header side-content bg-white-op">
+                    <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                    <button class="btn btn-link text-gray pull-right hidden-md hidden-lg" type="button" data-toggle="layout" data-action="sidebar_close">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <!-- Themes functionality initialized in App() -> uiHandleTheme() -->
+                    <div class="btn-group pull-right">
+                        <button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
+                            <i class="si si-drop"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right font-s13 sidebar-mini-hide">
+                            <li>
+                                <a data-toggle="theme" data-theme="default" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-default pull-right"></i> <span class="font-w600">Default</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="theme" data-theme="assets/css/themes/amethyst.min.css" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-amethyst pull-right"></i> <span class="font-w600">Amethyst</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="theme" data-theme="assets/css/themes/city.min.css" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-city pull-right"></i> <span class="font-w600">City</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="theme" data-theme="assets/css/themes/flat.min.css" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-flat pull-right"></i> <span class="font-w600">Flat</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="theme" data-theme="assets/css/themes/modern.min.css" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-modern pull-right"></i> <span class="font-w600">Modern</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="theme" data-theme="assets/css/themes/smooth.min.css" tabindex="-1" href="javascript:void(0)">
+                                    <i class="fa fa-circle text-smooth pull-right"></i> <span class="font-w600">Smooth</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="h5 text-white" href="/">
+                        <i class="fa fa-code text-primary"></i> <span class="h5 font-w600 sidebar-mini-hide">JS Site</span>
+                    </a>
+                </div>
+                <!-- END Side Header -->
+
+                <!-- Side Content -->
+                <div class="side-content">
+                    <ul class="nav-main">
+                        <li>
+                            <a class="active" href="../index.html"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Home</span></a>
+                        </li>
+                        <li class="nav-main-heading"><span class="sidebar-mini-hide">Challenges</span></li>
+                        <li>
+                            <a class="active" href="../challenges/garage.html"><i class="fa fa-home"></i><span class="sidebar-mini-hide">Garage</span></a>
+                        </li>
+                        <li>
+                            <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="glyphicon glyphicon-list"></i><span class="sidebar-mini-hide">JSON</span></a>
+                            <ul>
+                                <li>
+                                    <a href="../challenges/json1.html">JSON 1</a>
+                                </li>
+                                <li>
+                                    <a href="../challenges/json2.html">JSON 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-main-heading"><span class="sidebar-mini-hide">Code</span></li>
+                        <li>
+                            <a class="active" href="../code/garage.html"><i class="fa fa-home"></i><span class="sidebar-mini-hide">Garage</span></a>
+                        </li>
+                        <li>
+                            <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="glyphicon glyphicon-list"></i><span class="sidebar-mini-hide">JSON</span></a>
+                            <ul>
+                                <li>
+                                    <a href="../code/json1.html">JSON 1</a>
+                                </li>
+                                <li>
+                                    <a href="../code/json2.html">JSON 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- END Side Content -->
+            </div>
+            <!-- Sidebar Content -->
+        </div>
+        <!-- END Sidebar Scroll Container -->
+    </nav>
+    <!-- END Sidebar -->
+
+    <!-- Header -->
+    <header id="header-navbar" class="content-mini content-mini-full">
+        <!-- Header Navigation Left -->
+        <ul class="nav-header pull-left">
+            <li class="hidden-md hidden-lg">
+                <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                <button class="btn btn-default" data-toggle="layout" data-action="sidebar_toggle" type="button">
+                    <i class="fa fa-navicon"></i>
+                </button>
+            </li>
+            <li class="hidden-xs hidden-sm">
+                <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                <button class="btn btn-default" data-toggle="layout" data-action="sidebar_mini_toggle" type="button">
+                    <i class="fa fa-ellipsis-v"></i>
+                </button>
+            </li>
+            <li class="visible-xs">
+                <!-- Toggle class helper (for .js-header-search below), functionality initialized in App() -> uiToggleClass() -->
+                <button class="btn btn-default" data-toggle="class-toggle" data-target=".js-header-search" data-class="header-search-xs-visible" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </li>
+            <li class="js-header-search header-search">
+                <form class="form-horizontal" action="/" method="post">
+                    <div class="form-material form-material-primary input-group remove-margin-t remove-margin-b">
+                        <input class="form-control" type="text" id="base-material-text" name="base-material-text" placeholder="Search..">
+                        <span class="input-group-addon"><i class="si si-magnifier"></i></span>
+                    </div>
+                </form>
+            </li>
+        </ul>
+        <!-- END Header Navigation Left -->
+    </header>
+    <!-- END Header -->
+
+    <!-- Main Container -->
+    <main id="main-container">
+        <!-- Page Header -->
+        <div class="content bg-gray-lighter">
+            <div class="row items-push">
+                <div class="col-sm-7">
+                    <h1 class="page-heading">
+                        Javascript Website<small>.</small>
+                    </h1>
+                </div>
+                <div class="col-sm-5 text-right hidden-xs">
+                    <ol class="breadcrumb push-10-t">
+                        <li><p>Challenges</p></li>
+                        <li><a class="link-effect" href="/">JSON 1</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- END Page Header -->
+
+        <!-- Page Content -->
+        <div class="content" onload="displayData()">
+            <!-- Block -->
+            <div class="block">
+                <!-- Begin Basic Information -->
+                <div class="block">
+                    <div class="block-header">
+                        <ul class="block-options">
+                            <li>
+                                <button type="button"><i class="si si-settings"></i></button>
+                            </li>
+                        </ul>
+                        <h3 class="block-title">Basic Information</h3>
+                    </div>
+                    <div class="block-content block-content-narrow">
+                        <table class="table table-condensed table-borderless" style="width: 200px;">
+                            <tbody>
+                            <tr>
+                                <td class="text-left" style="width: 200px;">Squad Name</td>
+                                <td class="text-right" id="var-squadName"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="width: 200px;">Home Town</td>
+                                <td class="text-right" id="var-homeTown"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="width: 200px;">Formed</td>
+                                <td class="text-right" id="var-formed"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="width: 200px;">Secret Base</td>
+                                <td class="text-right" id="var-secretBase"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" style="width: 200px;">Active</td>
+                                <td class="text-right" id="var-active"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END Basic Information -->
+            </div>
+
+            <!-- Begin Members -->
+            <div class="block">
+                <div class="block-header">
+                    <div class="block-options">
+                    </div>
+                    <h3 class="block-title">Members</h3>
+                </div>
+                <div class="block-content">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th class="text-center" style="width: 50px;">#</th>
+                            <th>Name</th>
+                            <th class="hidden-xs" style="width: 15%;">Access</th>
+                            <th class="text-center" style="width: 100px;">Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-center">1</td>
+                            <td>Craig Stone</td>
+                            <td class="hidden-xs">
+                                <span class="label label-danger">Disabled</span>
+                            </td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Remove Client"><i class="fa fa-times"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">2</td>
+                            <td>Sara Holland</td>
+                            <td class="hidden-xs">
+                                <span class="label label-primary">Personal</span>
+                            </td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Remove Client"><i class="fa fa-times"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">3</td>
+                            <td>Ethan Howard</td>
+                            <td class="hidden-xs">
+                                <span class="label label-info">Business</span>
+                            </td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Remove Client"><i class="fa fa-times"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">4</td>
+                            <td>Helen Silva</td>
+                            <td class="hidden-xs">
+                                <span class="label label-danger">Disabled</span>
+                            </td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Remove Client"><i class="fa fa-times"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">5</td>
+                            <td>Vincent Sims</td>
+                            <td class="hidden-xs">
+                                <span class="label label-info">Business</span>
+                            </td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Remove Client"><i class="fa fa-times"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">6</td>
+                            <td>Megan Dean</td>
+                            <td class="hidden-xs">
+                                <span class="label label-primary">Personal</span>
+                            </td>
+                            <td class="text-center">
+                                <div class="btn-group">
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Edit Client"><i class="fa fa-pencil"></i></button>
+                                    <button class="btn btn-xs btn-default" type="button" data-toggle="tooltip" title="" data-original-title="Remove Client"><i class="fa fa-times"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- END Members -->
+        </div>
+        </div>
+        <!-- END Page Content -->
+    </main>
+    <!-- END Main Container -->
+
+    <!-- Footer -->
+    <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
+    </footer>
+    <!-- END Footer -->
+</div>
+<!-- END Page Container -->
+
+<!-- Begin JS -->
+<script src="../assets/js/pages/json1.js"></script>
+
+<script src="../assets/js/oneui.min.js"></script>
+<!-- END JS -->
+
+<!-- Page JS Plugins + Page JS Code -->
+</body>
+</html>
